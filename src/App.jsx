@@ -32,7 +32,7 @@ function App() {
           <Route path="/about-us" element={<About_Us />} />
           <Route path="/contact-us" element={<Contact_Us />} />
           <Route path="/" element={<Home islogin={islogin} />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login changestate={changestate} />} />
           <Route path="/create-account" element={<Create_account />} />
           <Route
             path="/select_allergies/:email"

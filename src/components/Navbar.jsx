@@ -8,6 +8,7 @@ const Navbar = ({ islogin, changestate }) => {
   const handleLogout = () => {
     localStorage.setItem("islogin", "false"); // Set the string "false"
     changestate(false); // Update the state
+    localStorage.clear();
     navigate("/");
   };
 
